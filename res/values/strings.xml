@@ -1,0 +1,12 @@
+<resources>
+
+    <string name="app_name">Spirit name generator </string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="firstName">First name:</string>
+    <string name="lastName">Last name:</string>
+    <string name="generate">Generate</string>
+    <color name="textbox">#d4d5d7</color>
+
+</resources>

@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/eagle_feather_painting_crop" >
+
+    <TextView
+        android:id="@+id/firstNameMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/textbox"
+        android:layout_marginTop="59dp"
+        android:text="@string/firstName"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/firstNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/firstNameMessage"
+        android:layout_toRightOf="@+id/firstNameMessage"
+        android:ems="10"
+        android:textColor="@color/textbox" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/lastNameMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:background="@color/textbox"
+        android:layout_below="@+id/firstNameMessage"
+        android:layout_marginTop="42dp"
+        android:text="@string/lastName"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/lastNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/lastNameMessage"
+        android:layout_toRightOf="@+id/lastNameMessage"
+        android:ems="10"
+        android:textColor="@color/textbox" />
+
+    <Button
+        android:id="@+id/generateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@color/textbox"
+        android:layout_centerVertical="true"
+        android:text="@string/generate"
+        android:onClick="gen" />
+
+    <TextView
+        android:id="@+id/newName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/generateButton"
+        android:background="@color/textbox"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="78dp"
+        android:text="Here is your new name"
+        android:textSize="25dp"
+        tools:context=".MainActivity" />
+
+</RelativeLayout>
